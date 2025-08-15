@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -12,11 +16,68 @@
   --font-mono: var(--font-geist-mono);
 }
 
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+  0% { transform: translateY(20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-in forwards;
+}
+
+.animate-slideUp {
+  animation: slideUp 0.8s ease-out forwards;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+}
+.circuit-line {
+  position: fixed;
+  background: cyan;
+  width: 2px;
+  height: 80px;
+  box-shadow: 0 0 5px cyan, 0 0 6px cyan; /* reduced from 10px, 20px */
+  animation: pulse 2s infinite alternate;
+}
+
+.circuit-line.horizontal {
+  width: 80px;
+  height: 2px;
+}
+
+.node {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background: cyan;
+  border-radius: 50%;
+  box-shadow: 0 0 4px cyan, 0 0 8px cyan; /* reduced from 8px, 16px */
+  animation: pulse 2s infinite alternate;
+}
+
+.nav-underline-glow {
+  box-shadow: 0 0 0px 0px #22d3ee, 0 0 8px 0px #38bdf8;
+  animation: pulse 2s infinite alternate;
+}
+
+.image-underline-glow {
+  box-shadow: 0 0 4px #22d3ee, 0 0 8px 0px #38bdf8;
+  animation: pulse 2s infinite alternate;
+  background: cyan;
+}
+
+@keyframes pulse {
+  from { opacity: 0.5; }
+  to { opacity: 1; }
 }
 
 body {
@@ -24,3 +85,4 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
