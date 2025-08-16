@@ -14,14 +14,14 @@ export default function Projects() {
       img: services,
     },
     {
-      title: "Admin",
+      title: "Servicehub Admin",
       desc: "Full-stack task manager with Supabase backend and real-time updates.",
       tech: ["React", "Supabase", "MySQL"],
       img: admin,
     
     },
     {
-      title: "E-commerce Store",
+      title: "Moonwalk",
       desc: "Modern online store with Firebase authentication and Stripe payments.",
       tech: ["Firebase", "Next.js", "Stripe"],
       img: moon,
