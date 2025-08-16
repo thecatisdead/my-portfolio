@@ -26,7 +26,7 @@ export default function About() {
       className="bg-gradient-to-b from-[#0F111A] via-[#1A1C29] to-[#0F111A] flex flex-col items-start px-4 sm:px-6 md:px-12 lg:px-20"
 >
       <h2 className="text-2xl font-bold mb-4 text-center text-white animate-fadeIn">
-        About Message
+        About Me
       </h2>
 
       <p className="text-md mb-12 text-start text-white animate-fadeIn">
