@@ -65,7 +65,7 @@ export default function Certificates() {
                <img
                  src={hackathon.src}
                  alt="Photo"
-                 className="w-12 h-12 sm:w-16 sm:h-16 rounded-full border-2 border-cyan-500 shadow-lg shadow-cyan-500/30 hover:scale-105 transition-transform"
+                 className="w-12 h-12 sm:w-16 sm:h-16 rounded-full border-2 border-cyan-500"
                />
                24-Hour Hackathon
              </h3>
@@ -84,7 +84,7 @@ export default function Certificates() {
                <img
                  src={startup.src}
                  alt="Photo"
-                 className="w-12 h-12 sm:w-16 sm:h-16 rounded-full border-2 border-cyan-500 shadow-lg shadow-cyan-500/30 hover:scale-105 transition-transform"
+                 className="w-12 h-12 sm:w-16 sm:h-16 rounded-full border-2 border-cyan-500"
                />
                Startup Weekend
              </h3>
