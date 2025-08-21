@@ -17,8 +17,9 @@ export const projectsData: Project[] = [
   {
     slug: "servicehub",
     title: "ServiceHub",
-    desc: "A responsive personal portfolio built with Next.js, Tailwind CSS, and DaisyUI.",
-    longDesc: "ServiceHub is a showcase site with smooth page transitions, responsive layouts, and an accessible component library. It emphasizes performance and best practices, including image optimization, route prefetching, and semantic HTML.",
+    desc: "A responsive mobile application that connects communities with local service providers.",
+    longDesc:
+      "ServiceHub is a mobile application that connects community members with local service providers. It includes core features such as user registration, profile management, service posting, service search, and messaging, enabling seamless user-to-user service transactions.",
     tech: ["Flutter", "Firebase", "Dart"],
     img: services,
     link: "https://servicehub.vercel.app/",
@@ -26,19 +27,19 @@ export const projectsData: Project[] = [
   {
     slug: "servicehub-admin",
     title: "Servicehub Admin",
-    desc: "Full-stack task manager with Supabase backend and real-time updates.",
-    longDesc: "The admin panel features role-based access, audit-friendly activity logs, and real-time synchronization backed by Supabase. It includes optimistic UI updates, error boundaries, and a scalable folder structure.",
-    tech: ["React", "Supabase", "MySQL"],
+    desc: "Admin panel for ServiceHub",
+    longDesc:
+      "The admin panel allows administrators to manage users, moderate posts, and handle reports efficiently. Built with Flutter and Firebase, it provides a responsive interface and real-time data synchronization to ensure smooth platform management.",
+    tech: ["Flutter", "Firebase", "Dart"],
     img: admin,
   },
   {
     slug: "moonwalk",
     title: "Moonwalk",
-    desc: "Modern online store with Firebase authentication and Stripe payments.",
-    longDesc: "Moonwalk is an e-commerce demo integrating Firebase Auth for secure sign-in and Stripe for payments. It includes guarded routes, cart persistence, and a mobile-first design with fast client-side navigation.",
-    tech: ["Firebase", "Next.js", "Stripe"],
+    desc: "A mobile application for tracking and managing attendance.",
+    longDesc:
+      "Moonwalk is an e-commerce demo integrating Firebase Auth for secure sign-in and Stripe for payments. It includes guarded routes, cart persistence, and a mobile-first design with fast client-side navigation.",
+    tech: ["Flutter", "Dart", "Postgre"],
     img: moon,
   },
 ];
-
-

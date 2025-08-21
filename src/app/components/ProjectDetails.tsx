@@ -20,6 +20,13 @@ export default function ProjectDetails({ project }: Props) {
       <Link
         href="/"
         className="text-cyan-300 hover:text-pink-300 transition-colors"
+        onClick={() => {
+          if (typeof window !== "undefined") {
+            try {
+              sessionStorage.setItem("scrollToProjects", "1");
+            } catch {}
+          }
+        }}
       >
         ← Back to projects
       </Link>
@@ -64,7 +71,7 @@ export default function ProjectDetails({ project }: Props) {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-cyan-300 hover:text-pink-300 transition-colors"
               >
-                Visit site
+                {/* Visit site
                 <svg
                   className="w-4 h-4"
                   fill="none"
@@ -77,7 +84,7 @@ export default function ProjectDetails({ project }: Props) {
                     strokeWidth="2"
                     d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
                   />
-                </svg>
+                </svg> */}
               </a>
             </div>
           )}

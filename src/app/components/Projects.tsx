@@ -3,12 +3,12 @@ import Link from "next/link";
 import { projectsData } from "@/app/data/projects";
 
 export default function Projects() {
-  const portfolio = "https://regeryl.vercel.app/";
+
 
   return (
     <section
       id="projects"
-      className="py-20 bg-gradient-to-b from-[#0F111A] via-[#1A1C29] to-[#0F111A] px-6 flex flex-col items-center"
+      className="py-10 bg-gradient-to-b from-[#0F111A] via-[#1A1C29] to-[#0F111A] px-6 flex flex-col items-center scroll-mt-16"
     >
       <h3 className="text-2xl font-bold mb-12 text-center animate-fadeIn">
         Projects
@@ -18,7 +18,7 @@ export default function Projects() {
           <Link
             key={project.slug}
             href={`/project/${project.slug}`}
-            className="group bg-[#1A1C29] border border-cyan-500/20 rounded-2xl shadow-lg hover:shadow-pink-500/40 overflow-hidden transform hover:-translate-y-2 transition-all duration-500 animate-slideUp hover:scale-[1.02]"
+            className="group bg-[#1A1C29] border border-cyan-500/20 rounded-2xl shadow-md hover:shadow-black overflow-hidden transform hover:-translate-y-2 transition-all duration-500 animate-slideUp hover:scale-[1.02]"
           >
             {/* Hero Screenshot Section */}
             <div className="relative w-full h-48 overflow-hidden">
@@ -45,7 +45,7 @@ export default function Projects() {
                 {project.tech.map((tech, i) => (
                   <span
                     key={i}
-                    className="px-3 py-1.5 bg-gradient-to-r from-cyan-500/20 to-pink-500/20 border border-cyan-500/30 rounded-full text-xs font-medium text-cyan-300 hover:bg-gradient-to-r hover:from-cyan-500/30 hover:to-pink-500/30 transition-all duration-300 hover:scale-105"
+                    className="px-3 py-1.5 border rounded-full text-xs font-medium text-cyan-300 hover:bg-gradient-to-r hover:from-cyan-500/30 hover:to-pink-500/30 transition-all duration-300 hover:scale-105"
                   >
                     {tech}
                   </span>
@@ -56,7 +56,7 @@ export default function Projects() {
             </div>
 
             {/* Subtle accent line */}
-            <div className="h-1 bg-gradient-to-r from-cyan-500 via-pink-500 to-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="bg-gradient-to-r from-cyan-500 via-pink-500 to-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
           </Link>
         ))}
       </div>

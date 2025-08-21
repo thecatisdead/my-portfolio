@@ -25,10 +25,14 @@ export default function Introduction() {
 
           <TypeAnimation
             sequence={[
-              "Hello there,", 700,
-              "Hello there,\nI'm Regeryl", 1200,
-              "Hello there,\nI'm a Software Developer", 1400,
-              "Hello there,\nI build Web & Mobile apps", 1600,
+              "Hello there,",
+              700,
+              "Hello there,\nI'm Regeryl",
+              1200,
+              "Hello there,\nI'm a Software Developer",
+              1400,
+              "Hello there,\nI build Web & Mobile apps",
+              1600,
             ]}
             wrapper="span"
             speed={70}

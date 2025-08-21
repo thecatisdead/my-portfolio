@@ -11,7 +11,7 @@ export default function Experience() {
       role: "Frontend Developer Intern",
       company: "Project Moonshot Information Technology Solutions",
       period: "Jun 2024 – Aug 2024",
-      desc: "Assisted with troubleshooting and resolving technical issues for clients, providing timely and effective support.",
+      desc: "Independently developed the frontend of an attendance monitoring app using Flutter, implementing key attendance tracking features and integrating APIs with the backend. Additionally, assisted with parts of the admin interface using Next.js to support the overall project.",
     },
   ];
 
