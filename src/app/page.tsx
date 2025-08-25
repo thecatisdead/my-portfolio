@@ -11,6 +11,7 @@ import CircuitBackground from "./components/CircuitBackground";
 import Certificates from "./components/Certificates";
 import Contact from "./components/Contact";
 import { motion } from "framer-motion";
+import Footer from "./components/Footer";
 
 export default function Home() {
   useEffect(() => {
@@ -68,6 +69,7 @@ export default function Home() {
           <Projects />
           <Certificates />
           <Contact />
+          <Footer />
         </motion.div>
       </main>
       <footer className="flex gap-[24px] flex-wrap items-center justify-center">
