@@ -38,7 +38,7 @@ export const projectsData: Project[] = [
     title: "Moonwalk",
     desc: "A mobile application for tracking and managing attendance.",
     longDesc:
-      "Moonwalk is an e-commerce demo integrating Firebase Auth for secure sign-in and Stripe for payments. It includes guarded routes, cart persistence, and a mobile-first design with fast client-side navigation.",
+      "Moonwalk is a mobile attendance monitoring application. It allows users to scan QR codes to record attendance, while also tracking time logs automatically. Through their profile, users can view the organizations they belong to, and for added convenience, they can securely log in using biometric authentication.",
     tech: ["Flutter", "Dart", "Postgre"],
     img: moon,
   },

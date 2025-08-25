@@ -8,7 +8,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="py-10 bg-gradient-to-b from-[#0F111A] via-[#1A1C29] to-[#0F111A] px-6 flex flex-col items-center scroll-mt-16"
+      className="py-10 px-8 bg-gradient-to-b from-[#0F111A] via-[#1A1C29] to-[#0F111A] px-6 flex flex-col items-center scroll-mt-16"
     >
       <h3 className="text-2xl font-bold mb-12 text-center animate-fadeIn">
         Projects
