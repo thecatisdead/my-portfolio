@@ -18,12 +18,12 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="py-20 bg-gradient-to-b from-[#0F111A] via-[#1A1C29] to-[#0F111A] flex flex-col items-start px-22"
+      className="py-20 bg-gradient-to-b from-[#0F111A] via-[#1A1C29] to-[#0F111A] flex flex-col items-start px-4 sm:px-6 md:px-8 overflow-x-hidden"
     >
       <h2 className="text-2xl font-bold mb-4 text-center text-white animate-fadeIn">
         Experience
       </h2>
-      <div className="relative max-w-4xl w-full">
+      <div className="relative max-w-4xl w-full mx-auto overflow-hidden">
         {/* Neon center line */}
         <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-pink-500 via-cyan-400 to-purple-500 shadow-[0_0_2px_#00fff7] transform -translate-x-1/2"></div>
 
@@ -31,17 +31,17 @@ export default function Experience() {
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className={`relative w-full md:w-1/2 px-6 py-6 bg-[#1A1C29] border border-cyan-500/20 rounded-xl shadow-lg ${
+              className={`relative w-full md:w-1/2 px-4 sm:px-6 py-6 bg-[#1A1C29] border border-cyan-500/20 rounded-xl shadow-lg ${
                 index % 2 === 0 ? "md:ml-auto md:pl-10" : "md:mr-auto md:pr-10"
               }`}
             >
-              <h3 className="text-md font-semibold">
+              <h3 className="text-md font-semibold break-words">
                 {exp.role}
               </h3>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-400 text-sm break-words">
                 {exp.company} • {exp.period}
               </p>
-              <p className="mt-2 text-gray-300 text-sm">{exp.desc}</p>
+              <p className="mt-2 text-gray-300 text-sm break-words">{exp.desc}</p>
 
               {/* Neon glowing dot */}
               <span></span>
