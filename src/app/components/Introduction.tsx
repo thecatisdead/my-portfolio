@@ -7,28 +7,13 @@ export default function Introduction() {
   return (
     <section className="min-h-[420px] bg-[#0F111A] flex flex-col md:flex-row items-center justify-center px-4 sm:px-6 md:px-12 lg:px-20 gap-10">
       <div className="flex-1 text-center md:text-left">
-        <p className="text-3xl sm:text-4xl md:text-5xl min-h-[96px] md:min-h-[150px] font-bold bg-gradient-to-r from-[#00FFF7] via-[#FF00A8] to-[#9D4EDD] bg-clip-text text-transparent">
-          {/* <TypeAnimation
-        sequence={[
-          "Hello, I'm Regeryl", // text
-          1000,                 // wait 1s
-        //   "Full-Stack Developer", 
-        //   2000,<div className="circuit-line horizontal" style={{ top: "18px", right: "30px", width: "20px",  transform: "rotate(130deg)" }}></div>
-
-        //   "Cyberpunk Coder 🚀",  
-        //   2000
-        ]}
-        wrapper="span"
-        speed={10}
-        // repeat={Infinity}
-      /> */}
-          <p className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl">
-            Hello there,
-          </p>
-          <span className="flex items-bottom">
+        <p className="text-3xl sm:text-4xl md:text-4xl min-h-[96px] md:min-h-[150px] font-bold">
+          <span className=" md:text-6xl sm:text-5xl bg-gradient-to-r from-[#00FFF7] via-[#FF00A8] to-[#9D4EDD] bg-clip-text text-transparent">
+            Hello there!
+          </span>
+          <span className="flex items-bottom text-cyan-400 font-semibold tracking-wide drop-shadow-lg drop-shadow-cyan-400/30">
             <TypeAnimation
               sequence={[
-                1000,
                 "I'm Regeryl",
                 1000,
                 "I'm a Software Developer",
@@ -38,11 +23,10 @@ export default function Introduction() {
               ]}
               speed={70}
               deletionSpeed={60}
-              cursor={false}
+              cursor={true}
               repeat={Infinity}
               style={{ whiteSpace: "pre-line", display: "inline-block" }}
             />
-            <span className="inline-block w-1 sm:w-1.5 md:w-2 h-8 sm:h-9 md:h-11 bg-white ml-1 animate-blink mt-0 sm:mt-0 md:mt-0"></span>
           </span>
         </p>
 
