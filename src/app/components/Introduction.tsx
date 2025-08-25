@@ -22,26 +22,28 @@ export default function Introduction() {
         speed={10}
         // repeat={Infinity}
       /> */}
-
-          <TypeAnimation
-            sequence={[
-              "Hello there,",
-              700,
-              "Hello there,\nI'm Regeryl",
-              1200,
-              "Hello there,\nI'm a Software Developer",
-              1400,
-              "Hello there,\nI build Web & Mobile apps",
-              1600,
-            ]}
-            wrapper="span"
-            speed={70}
-            deletionSpeed={60}
-            cursor={true}
-            preRenderFirstString
-            repeat={Infinity}
-            style={{ whiteSpace: "pre-line", display: "block" }}
-          />
+          <p className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl">
+            Hello there,
+          </p>
+          <span className="flex items-bottom">
+            <TypeAnimation
+              sequence={[
+                1000,
+                "I'm Regeryl",
+                1000,
+                "I'm a Software Developer",
+                1000,
+                "I build Web & Mobile apps",
+                1000,
+              ]}
+              speed={70}
+              deletionSpeed={60}
+              cursor={false}
+              repeat={Infinity}
+              style={{ whiteSpace: "pre-line", display: "inline-block" }}
+            />
+            <span className="inline-block w-1 sm:w-1.5 md:w-2 h-8 sm:h-9 md:h-11 bg-white ml-1 animate-blink mt-0 sm:mt-0 md:mt-0"></span>
+          </span>
         </p>
 
         <p className="mt-6 text-base sm:text-lg md:text-xl text-gray-300 max-w-xl md:max-w-lg animate-slidUp">

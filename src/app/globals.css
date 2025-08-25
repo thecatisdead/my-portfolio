@@ -26,12 +26,21 @@ html {
   100% { transform: translateY(0); opacity: 1; }
 }
 
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
 .animate-fadeIn {
   animation: fadeIn 1s ease-in forwards;
 }
 
 .animate-slideUp {
   animation: slideUp 0.8s ease-out forwards;
+}
+
+.animate-blink {
+  animation: blink 1s infinite;
 }
 
 @media (prefers-color-scheme: dark) {

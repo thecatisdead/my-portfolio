@@ -14,7 +14,7 @@ export default function Certificates() {
       </h3>
       <div className="w-full max-w-6xl mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
-          <div className="certificate-card border-2 p-4 rounded-lg shadow-md">
+          <div className="certificate-card group border-2 border-white/10 p-4 rounded-lg shadow-md hover:shadow-lg bg-gradient-to-br from-white/10 via-white/5 to-white/0 ">
             <h3 className="text-lg font-semibold flex flex-row items-center gap-3">
               <img
                 src={hackathon.src}
@@ -23,17 +23,17 @@ export default function Certificates() {
               />
               24-Hour Hackathon
             </h3>
-            <p className="text-sm text-gray-500 pt-4">
+            <p className="text-sm text-gray-300 pt-4">
               Issued by: Project Moonshot Inc. | 2025
             </p>
             <p className="text-sm text-cyan-400 mt-2">
               Role: Frontend Developer
             </p>
-            <p className="text-sm text-gray-400">
+            <p className="text-sm text-gray-300">
               Technologies: Laravel, Tailwind CSS
             </p>
           </div>
-          <div className="certificate-card border-2 p-4 rounded-lg shadow-md">
+          <div className="certificate-card group border-2 border-white/10 p-4 rounded-lg shadow-md bg-gradient-to-br from-white/10 via-white/5 to-white/0">
             <h3 className="text-lg font-semibold flex flex-row items-center gap-3">
               <img
                 src={startup.src}
@@ -42,13 +42,13 @@ export default function Certificates() {
               />
               Startup Weekend
             </h3>
-            <p className="text-sm text-gray-500 pt-4">
+            <p className="text-sm text-gray-300 pt-4">
               Issued by: TechStars Startup Weekend Bukidnon 6 | 2025
             </p>
             <p className="text-sm text-cyan-400 mt-2">Role: UI/UX Designer</p>
-            <p className="text-sm text-gray-400">Tools: Figma</p>
+            <p className="text-sm text-gray-300">Tools: Figma</p>
           </div>
-          <div className="certificate-card border-2 p-4 rounded-lg shadow-md">
+          <div className="certificate-card group border-2 border-white/10 p-4 rounded-lg shadow-md bg-gradient-to-br from-white/10 via-white/5 to-white/0">
             <h3 className="text-lg font-semibold flex flex-row items-center gap-3">
               <img
                 src={tesda.src}
@@ -57,11 +57,11 @@ export default function Certificates() {
               />
               Computer System Servicing NCII
             </h3>
-            <p className="text-sm text-gray-500 pt-4">
+            <p className="text-sm text-gray-300 pt-4">
               Issued by: Tesda | 2020
             </p>
            
-            <p className="text-sm text-gray-400">Computer assembly, repair, and maintenance.
+            <p className="text-sm text-gray-300">Computer assembly, repair, and maintenance.
             </p>
           </div>
         </div>
