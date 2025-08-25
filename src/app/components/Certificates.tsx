@@ -30,7 +30,7 @@ export default function Certificates() {
               Role: Frontend Developer
             </p>
             <p className="text-sm text-gray-400">
-              Technologies: Laravel, React, Tailwind CSS
+              Technologies: Laravel, Tailwind CSS
             </p>
           </div>
           <div className="certificate-card border-2 p-4 rounded-lg shadow-md">

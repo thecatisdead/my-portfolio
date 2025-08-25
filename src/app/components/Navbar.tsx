@@ -66,7 +66,7 @@ export default function Navbar() {
 
       {/* Mobile: Hamburger button */}
       <button
-        className="lg:hidden fixed top-3 right-4 z-50 p-2 rounded-full bg-gray-950/70 border border-white/20 text-gray-200 shadow-sm backdrop-blur-md"
+        className="lg:hidden fixed top-3 right-4 z-50 p-2 rounded-xl bg-gray-950/70 border border-white/20 text-gray-200 shadow-sm backdrop-blur-md"
         onClick={() => setMobileMenuOpen((open) => !open)}
         aria-label="Toggle menu"
         aria-expanded={mobileMenuOpen}
@@ -91,7 +91,7 @@ export default function Navbar() {
       {/* Mobile: Dropdown menu */}
       <div
         id="mobile-menu"
-        className={`lg:hidden fixed left-1/2 transform -translate-x-1/2 mt-2 w-[86vw] max-w-xs bg-white border border-gray-200 rounded-2xl shadow-lg transition-all duration-500 z-40
+        className={`lg:hidden fixed left-1/2 transform -translate-x-1/2 mt-2 w-[86vw] max-w-xs  bg-gray-950/80 backdrop-blur-md rounded-2xl shadow-lg transition-all duration-500 z-40
         ${
           mobileMenuOpen
             ? "opacity-100 translate-y-0 pointer-events-auto"
@@ -101,7 +101,6 @@ export default function Navbar() {
       >
         <div className="px-2 pt-2 pb-3 space-y-1">
           {[
-        
             { id: "about", label: "About" },
             { id: "experience", label: "Experience" },
             { id: "projects", label: "Projects" },
