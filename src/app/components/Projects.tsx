@@ -45,7 +45,7 @@ export default function Projects() {
                 {project.tech.map((tech, i) => (
                   <span
                     key={i}
-                    className="px-3 py-1.5 border rounded-full text-xs font-medium text-cyan-300 hover:bg-gradient-to-r hover:from-cyan-500/30 hover:to-pink-500/30 transition-all duration-300 hover:scale-105"
+                    className="px-3 py-1.5 border border-white rounded-full text-xs font-medium text-gray-700 bg-white"
                   >
                     {tech}
                   </span>

@@ -1,4 +1,4 @@
-import photo from "@/app/images/senior2.png";
+import photo from "@/app/images/seniorhigh.png";
 import photo2 from "@/app/images/cmu.png";
 import firebase from "@/app/images/firebase.png";
 import flutter from "@/app/images/flutter.png";
@@ -24,7 +24,7 @@ export default function About() {
     <section
       id="about"
       className="bg-gradient-to-b from-[#0F111A] via-[#1A1C29] to-[#0F111A] flex flex-col items-start px-4 sm:px-6 md:px-12 lg:px-20"
->
+    >
       <h2 className="text-2xl font-bold mb-4 text-center text-white animate-fadeIn">
         About Me
       </h2>
@@ -48,8 +48,8 @@ export default function About() {
         {techStack.map((tech, index, icon) => (
           <div
             key={index}
-            className="h-[30px] px-3 bg-white rounded-xl flex items-center justify-center text-xs sm:text-sm text-black"
-            >
+            className="h-[30px] px-3 bg-white rounded-full flex items-center justify-center text-xs sm:text-sm text-black"
+          >
             <img
               src={typeof tech.icon === "string" ? tech.icon : tech.icon.src}
               alt={tech.name}
@@ -64,7 +64,6 @@ export default function About() {
         Education
       </h2>
       <div className="flex flex-col sm:flex-row sm:items-center gap-4 mt-4 w-full">
-
         {/* Column 1 - Image */}
         <img src={photo.src} alt="Photo" className="w-14 h-14 rounded-full" />
 
@@ -76,14 +75,11 @@ export default function About() {
 
         {/* Column 3 - Date */}
         <div className="sm:text-right sm:pl-10">
-
           <p className="font-bold">2017-2019</p>
         </div>
       </div>
 
       <div className="flex flex-col sm:flex-row sm:items-center gap-4 mt-4 w-full">
-
-
         {/* Column 1 - Image */}
         <img src={photo2.src} alt="Photo" className="w-14 h-14 rounded-full" />
 
@@ -95,7 +91,7 @@ export default function About() {
 
         {/* Column 3 - Date */}
         <div className="sm:text-right sm:pl-10">
-          <p className="font-bold" >2020-2025</p>
+          <p className="font-bold">2020-2025</p>
         </div>
       </div>
     </section>

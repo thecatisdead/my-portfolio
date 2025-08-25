@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="py-10 bg-[#0F111A] text-white px-6 flex flex-col items-center"
+      className="py-8 bg-[#0F111A] text-white px-6 flex flex-col items-center"
     >
       <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
         Get In Touch
@@ -26,7 +26,7 @@ export default function Contact() {
               htmlFor="name"
               className="block text-sm font-medium text-gray-300 mb-2"
             >
-              Your Name
+              Name
             </label>
             <input
               type="text"
@@ -44,7 +44,7 @@ export default function Contact() {
               htmlFor="email"
               className="block text-sm font-medium text-gray-300 mb-2"
             >
-              Your Email
+             Email
             </label>
             <input
               type="email"
@@ -77,7 +77,7 @@ export default function Contact() {
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full bg-gradient-to-r from-cyan-400 to-purple-500 hover:from-cyan-500 hover:to-purple-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
+            className="w-full bg-gradient-to-r from-cyan-400 to-purple-500 hover:from-cyan-500 hover:to-purple-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 cursor-pointer"
           >
             <Send size={20} />
             Send Message

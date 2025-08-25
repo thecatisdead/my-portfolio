@@ -56,7 +56,7 @@ export default function ProjectDetails({ project }: Props) {
             {project.tech.map((tech) => (
               <span
                 key={tech}
-                className="px-3 py-1.5 bg-gradient-to-r from-cyan-500/20 to-pink-500/20 border border-cyan-500/30 rounded-full text-xs font-medium text-cyan-300"
+                className="px-3 py-1.5 bg-white border border-white rounded-full text-xs font-medium text-gray-700"
               >
                 {tech}
               </span>
