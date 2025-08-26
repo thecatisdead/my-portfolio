@@ -101,13 +101,13 @@ export default function Contact() {
         >
           <Github size={28} />
         </a>
-        <a
+        {/* <a
           href="https://linkedin.com/in/yourusername"
           target="_blank"
           className="hover:text-cyan-400 transition"
         >
           <Linkedin size={28} />
-        </a>
+        </a> */}
       </div>
     </section>
   );
