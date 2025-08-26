@@ -9,7 +9,7 @@ export default function Introduction() {
       <div className="flex-1 text-center md:text-left">
         <p className="text-3xl sm:text-4xl md:text-4xl min-h-[96px] md:min-h-[150px] font-bold">
           <span className=" md:text-6xl sm:text-5xl bg-gradient-to-r from-[#00FFF7] via-[#FF00A8] to-[#9D4EDD] bg-clip-text text-transparent">
-            Hello there!
+            Hello,
           </span>
           <span className="flex items-bottom text-cyan-400 font-semibold tracking-wide drop-shadow-lg drop-shadow-cyan-400/30">
             <TypeAnimation
