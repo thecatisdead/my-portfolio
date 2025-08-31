@@ -7,7 +7,8 @@ export default function Introduction() {
   const handleDownloadCV = async () => {
     try {
       // Fetch the file as a blob
-      const response = await fetch("/SDResume.pdf");
+      const response = await fetch(`/SDResume.pdf?${Date.now()}`);
+
       if (!response.ok) {
         alert("Resume file not found.");
         return;
