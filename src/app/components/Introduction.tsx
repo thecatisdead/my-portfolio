@@ -4,6 +4,34 @@ import { TypeAnimation } from "react-type-animation";
 import photo from "@/app/images/profile.png";
 
 export default function Introduction() {
+  const handleDownloadCV = async () => {
+    try {
+      // Fetch the file as a blob
+      const response = await fetch("/SDResume.pdf");
+      if (!response.ok) {
+        alert("Resume file not found.");
+        return;
+      }
+
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+
+      // Create download link
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = "SDResume.pdf";
+      document.body.appendChild(link);
+      link.click();
+
+      // Cleanup
+      document.body.removeChild(link);
+      window.URL.revokeObjectURL(url);
+    } catch (error) {
+      console.error("Download failed:", error);
+      alert("Download failed. Please try again.");
+    }
+  };
+
   return (
     <section className="min-h-[420px] bg-[#0F111A] flex flex-col md:flex-row items-center justify-center px-4 sm:px-6 md:px-12 lg:px-20 gap-10">
       <div className="flex-1 text-center md:text-left">
@@ -34,105 +62,33 @@ export default function Introduction() {
           A passionate software developer who builds modern web apps and
           scalable SaaS platforms.
         </p>
+
+        {/* Download CV Button */}
+        <div className="mt-8 flex gap-4">
+          <button
+            onClick={handleDownloadCV}
+            className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-400 hover:to-purple-500 text-white font-semibold rounded-lg shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 transform hover:scale-105 transition-all duration-300 animate-slidUp cursor-pointer"
+          >
+            <svg
+              className="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+              />
+            </svg>
+            Download Resume
+          </button>
+        </div>
       </div>
 
       {/* Right Column - Image */}
-
       <div className="relative flex flex-col items-center mt-8 md:mt-0">
-        {/* Top line
-  <div
-    className="absolute left-1/2 bg-cyan-500 z-0 image-underline-glow "
-    style={{ top: "-18px", height: "20px", width: "2px", transform: "translateX(-50%)" }}
-  ></div>
-
-<div
-    className="absolute left-1/2 bg-cyan-500 z-0 image-underline-glow "
-    style={{ top: "-32px", left:"108px", height: "18px", width: "2px", transform: "translateX(-50%)" }}
-  ></div>
-
-
-<div
-    className="absolute left-1/2 bg-cyan-500 z-0 image-underline-glow "
-    style={{ top: "-16px", left:"104px", height: "15px", width: "2px", transform: "translateX(-40%) rotate(30deg)" }}
-  ></div>
-
-
- <div
-    className="absolute left-1/2 bg-cyan-500 z-0 image-underline-glow "
-    style={{ top: "-16px", left:"96px", height: "12px", width: "2px", transform: "translateX(-40%) rotate(140deg)" }}
-  ></div>
-
- <div
-    className="absolute left-1/2 bg-cyan-500 z-0 image-underline-glow "
-    style={{ top: "-36px", left:"92px", height: "22px", width: "2px", transform: "translateX(-40%)" }}
-  ></div>
-
-  
-<div
-    className="absolute left-1/2 bg-cyan-500 z-0 image-underline-glow "
-    style={{ top: "-10px", left:"92px", height: "12px", width: "2px", transform: "translateX(-40%) rotate(140deg)" }}
-  ></div>
-
-<div
-    className="absolute left-1/2 bg-cyan-500 z-0 image-underline-glow "
-    style={{ top: "-16px", left:"81px", height: "15px", width: "2px", transform: "translateX(-40%) rotate(90deg)" }}
-  ></div>
-
-<div
-    className="absolute left-1/2 bg-cyan-500 z-0 image-underline-glow "
-    style={{ top: "-10px", left:"70px", height: "12px", width: "2px", transform: "translateX(-40%) rotate(40deg)" }}
-  ></div>
-
-<div
-    className="absolute left-1/2 bg-cyan-500 z-0 image-underline-glow "
-    style={{ top: "-30px", left:"81px", height: "22px", width: "2px", transform: "translateX(-40%)" }}
-  ></div> */}
-
-        {/*
-<div
-    className="absolute left-1/2 bg-cyan-500 z-0 image-underline-glow "
-    style={{ top: "-27px", left:"101px", height: "15px", width: "2px", transform: "translateX(-50%)" }}
-  ></div>
-
-<div
-    className="absolute left-1/2 bg-cyan-500 z-0 image-underline-glow "
-    style={{ top: "-20px", left:"130px", height: "14px", width: "2px", transform: "translateX(-50%) rotate(40deg)" }}
-  ></div>
-
-
-<div
-    className="absolute left-1/2 bg-cyan-500 z-0 image-underline-glow "
-    style={{ top: "-10px", left:"118px", height: "12px", width: "2px", transform: "translateX(-50%)  rotate(40deg)" }}
-  ></div>
-
-<div
-    className="absolute left-1/2 bg-cyan-500 z-0 image-underline-glow "
-    style={{ top: "-16px", left:"130px", height: "20px", width: "2px", transform: "translateX(-50%)  rotate(100deg)" }}
-  ></div>
-
-
-  
-<div
-    className="absolute left-1/2 bg-cyan-500 z-0 image-underline-glow "
-    style={{ top: "-15px", left:"97px", height: "15px", width: "2px", transform: "translateX(-50%)  rotate(82deg)" }}
-  ></div> */}
-        {/* Bottom line */}
-
-        {/*<div
-    className="absolute left-1/2 bg-cyan-500 z-0"
-    style={{ bottom: "-32px", height: "32px", width: "3px", transform: "translateX(-50%)" }}
-  ></div>
-  {/* Left line 
-  <div
-    className="absolute top-1/2 bg-cyan-500 z-0"
-    style={{ left: "-32px", width: "32px", height: "3px", transform: "translateY(-50%)" }}
-  ></div>
-  {/* Right line 
-  <div
-    className="absolute top-1/2 bg-cyan-500 z-0 "
-    style={{ right: "-32px", width: "32px", height: "3px", transform: "translateY(-50%)"  }}
-  ></div>
-  {/* Your image and border */}
         <img
           src={photo.src}
           alt="Photo"
